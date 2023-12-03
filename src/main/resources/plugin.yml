@@ -1,0 +1,17 @@
+name: HungerGames
+version: '${project.version}'
+main: dev.prinke.hungergames.HungerGames
+api-version: '1.20'
+softdepend:
+    - PlaceholderAPI
+commands:
+    hungergames:
+        description: HungerGames command
+        usage: /<command> [args]
+        aliases: [hg]
+        permission: hg.command
+        permission-message: You don't have permission to use this command.
+permissions:
+    hg.command:
+        description: Allows access to the HungerGames command
+        default: true
